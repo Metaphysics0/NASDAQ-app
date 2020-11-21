@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Company Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="company">
+      <div class="company__card-top">
+        <img id="logo" class="company__card-top-logo" src="" alt="" />
+        <h2 id="companyName" class="company__card-top-title"></h2>
+        <span id="symbol" class="company__card-top-title"></span>
+      </div>
+      <div class="company__card-bottom">
+        <h3 id="ceo" class="company__card-bottom-name"></h3>
+        <h3 id="city" class="company__card-bottom-city"></h3>
+        <h4 id="employees" class="company__card-bottom-employees"></h4>
+
+        <div class="prices">
+          <span id="price" class="prices__main"></span>
+          <span id="changes" class="prices__changes"></span>
+          <span id="beta" class="prices__beta"></span>
+          <span id="volAvg" class="prices__vol-avg"></span>
+          <span id="mktCap" class="prices__mkt-cap"></span>
+        </div>
+
+        <span class="company__card-bottom-index"></span>
+        <h4 class="heading__sub-2"></h4>
+        <p id="description" class="company__card-bottom-description"></p>
+        <a id="website" href="" class="company__card-bottom-url"></a>
+      </div>
+
+      <div class="chart">
+        <canvas class="chart__canvas" id="myChart" ></canvas>
+      </div>
+    </div>
+
+
+    <script src="./js/constants.js"></script>
+    <script src="./js/dom_elements.js"></script>
+    <script src="./js/dom_manager.js"></script>
+    <script src="./js/request_manager.js"></script>
+    <script src="./js/company.js"></script>
+  </body>
+</html>

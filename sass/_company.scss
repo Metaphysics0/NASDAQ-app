@@ -1,0 +1,139 @@
+.company {
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: var(--card-shadow);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: min-content;
+
+  &__card {
+    &-top {
+      display: flex;
+      margin-bottom: 2rem;
+      &-logo {
+        border-radius: 50%;
+        width: 9rem;
+        margin-right: 2rem;
+      }
+      &-title {
+        font-size: 3.5rem;
+        align-self: center;
+        font-weight: 600;
+      }
+    }
+    &-bottom {
+      padding: 1rem;
+      &-name {
+        padding: 1rem 0;
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      &-city {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1rem 0;
+      }
+
+      &-employees {
+        font-size: 1.75rem;
+        padding: 1rem 0;
+        font-weight: 400;
+      }
+      &-index {
+        font-size: 1.4rem;
+      }
+      &-description {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+      &-url {
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+        &:hover {
+          color: var(--robin-green);
+        }
+      }
+    }
+  }
+}
+
+.prices {
+  display: flex;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f4f4f4;
+
+  &__main {
+    margin: 1rem 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    transition: all 0.4s ease;
+    color: green;
+
+    &:hover {
+      cursor: pointer;
+      color: blue;
+    }
+    &.red {
+      color: #d02354;
+      &:hover {
+        cursor: pointer;
+        color: blue;
+      }
+    }
+  }
+
+  &__changes {
+    font-weight: 700;
+    color: green;
+    transition: all 0.4s ease;
+    &.red {
+      color: #d01348;
+      &:hover {
+        cursor: pointer;
+        color: blue;
+      }
+    }
+  }
+
+  &__beta {
+    align-self: center;
+    margin: 0 1.25rem;
+    font-size: 1.5rem;
+    color: #1f6f8b;
+    font-weight: 500;
+  }
+
+  &__vol-avg {
+    align-self: center;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: #150485;
+    font-weight: 500;
+  }
+
+  &__mkt-cap {
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #c6ab33;
+  }
+}
+
+.heading__sub-2 {
+  font-size: 2.75rem;
+  padding: 1rem 0;
+}
+
+// Chart Styling
+.chart {
+  padding: 1rem;
+  max-width: 70rem;
+
+  &__canvas {
+    height: 8rem;
+  }
+}
